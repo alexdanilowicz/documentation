@@ -179,7 +179,7 @@ which expose interfaces for accessing the current user's information.
 
       const MyApp = ({ Component, pageProps }) => {
         return (
-          <AuthProvider authUrl={process.env.NEXT_PUBLIC_AUTH_URL}>
+          <AuthProvider authUrl={process.env.NEXT_PUBLIC_AUTH_URL as string}>
             <Component {...pageProps} />
           </AuthProvider>
         );
